@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+</head>
+
+<body>
+
+  <table border="1" width="400px" height="500px" align="center">
+    <caption>테이블 제목</caption>
+    <tr>
+      <!--행-->
+      <td>1</td>
+      <!--셀-->
+      <td>2</td>
+      <td>3</td>
+
+    </tr>
+    <tr>
+      <!--행-->
+      <td>4</td>
+      <!--셀-->
+      <td>5</td>
+      <td>6</td>
+
+    </tr>
+    <tr>
+      <!--행-->
+      <td>7</td>
+      <!--셀-->
+      <td>8</td>
+      <td>9</td>
+
+    </tr>
+  </table>
+  <hr>
+  <!-- 4행 2열짜리 테이블 만듭니다.(기본코드,emmet자동완성)-->
+  <caption>4행 2열</caption>
+  <style>
+    table {
+      border: 1px solid gray;
+      width: 500px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    td {
+
+      border: 1px solid blue;
+      text-align: center;
+      font-size: 3rem;
+    }
+  </style>
+
+
+
+  <table>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </table>
+
+  <!-- table>tr*4>td*2{$} -->
+
+  <title>Document</title>
+  <table width="500px" height="500px" border="1">
+    <tr>
+      <th colspan="2">1</th>
+      <!-- <th>2</th> -->
+      <th>3</th>
+      <th>4</th>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td colspan="3">6</td>
+      <!-- <td>7</td> -->
+      <!-- <td>8</td> -->
+    </tr>
+
+    <tr>
+      <td colspan=2>9</td>
+      <!-- <td>10</td> -->
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <hr>
+    <table width="500px" height="500px" border="1">
+      <tr>
+
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <!-- <td>5</td> -->
+        <td rowspan="3">6</td>
+        <td>7</td>
+        <!-- <td>8</td> -->
+      </tr>
+      <tr>
+        <td>9</td>
+        <!-- <td>10</td> -->
+        <td>11</td>
+        <!-- <td>12</td> -->
+      </tr>
+      <tr>
+        <td>13</td>
+        <!-- <td>14</td> -->
+        <td>15</td>
+        <!-- <td>16</td> -->
+      </tr>
+
+    </table>
+
+
+    <caption>O전자정부 프레임워크 자바 개발자반 시간표O</caption>
+    <table width="500px" height="500px" border="1">
+      <tr>
+        <th colspan="6" font-size="5">전자정부 프레임워크 </th>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <!-- <td></td> -->
+        <td colspan="2"></td>
+        <!-- <td></td> -->
+        <td colspan="2"></td>
+        <!-- <td></td> -->
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+
+</body>
+
+</html>
