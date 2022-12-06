@@ -1,0 +1,42 @@
+nav {
+  height: 100px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:5px ;
+}
+
+nav>* {
+  border: 1px solid gray;
+  height: 50px;
+  flex: 1 0 100px;
+}
+
+nav>.leftmenu {
+  flex-grow: 2;
+}
+
+nav>.center {
+  flex-grow: 1;
+  align-self: stretch;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav>img{
+  width: 150px;
+  height: 150px;
+  border: 1px solid gray;
+  display: block;
+  position: absolute;
+  top:0px;
+
+}
+
+nav>.rightmenu {
+  flex-grow: 2;
+}
