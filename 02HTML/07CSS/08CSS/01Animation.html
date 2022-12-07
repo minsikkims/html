@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 400px;
+      height: 40px;
+      border: 3px solid orange;
+      text-align: center;
+      line-height: 40px;
+      position: relative;
+      left: 50%;
+    }
+
+    .d1 {
+      animation-name: moving1;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+    .d2 {
+      animation-name: moving2;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+    .d3 {
+      animation-name: moving3;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes moving1 {
+
+      /* 시작 */
+      from {
+        margin-left: 100%;
+
+      }
+
+      /* 끝 */
+      to {
+        margin-left: 0%;
+      }
+    }
+
+    @keyframes moving2 {
+
+      /* 시작 */
+      from {
+        margin-top: 100%;
+      }
+
+      /* 끝 */
+      to {
+        margin-top: 0%;
+      }
+    }
+
+    @keyframes moving3 {
+      from {
+
+        margin-left: -30%;
+        margin-top: 30%;
+      }
+
+      to {
+
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d1">HELLO WORLD</div>
+  <div class="d2">HELLO WORLD</div>
+  <div class="d3">HELLO WORLD</div>
+</body>
+
+</html>
