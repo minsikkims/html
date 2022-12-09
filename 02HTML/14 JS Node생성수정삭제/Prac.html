@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{
+      list-style-type :disc;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" id="in"><button onclick="addEl()">추가</button>
+  <hr>
+
+  <ul id="container">
+
+  </ul>
+  
+  <script>
+    
+    const addEl = () => {
+      const ContainerEl = document.getElementById('container'); //#container 태그 찾기
+      const UlEl = document.createElement('ul'); //div 태그 생성
+      const InEl = document.get`ElementById('in');
+      UlEl.innerHTML = `<li>${InEl.value}</li>`;  
+      
+      ContainerEl.append(UlEl);  
+      // ContainerEl.prepend(DivEl); 
+    }
+  </script>
+</body>
+
+</html>
