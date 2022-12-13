@@ -8,20 +8,39 @@
   <title>Login</title>
   <!-- reset css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="stylesheet" href="header.css">
+  <!-- 헤더.css -->
+  <link rel="stylesheet" href="../hoteleasy/css/header.css">
+  <link rel="stylesheet" href="./css/Loginmain.css">
 </head>
 
 <body>
-  <div id="wrapper">
-    <header>
-      <div id="logo"><img src="" alt="LOGO"></div>
-      <div class="div_search">
-        <input type="text" placeholder="입력하세요.">
-        
-        <button type="searchbutton" class="searchbutton"><img src="./search icon.png" alt="" class="searchicon" style="width: 20px; height: 20px;"></button>
+  <header>
+    <div id="logo"><a href="main.html"><img src="./image/logo.PNG" class="logopicture"></a></div>
+    <ul class="search">
+      <input type="text"><button type="searchbutton"><img src="./image/search icon.png" alt="logoimage"></button>
+    </ul>
+    <ul class="mypage">
+      <li type="block"><img src="image/회원.png"><a href="로그인창으로이동링크">로그인/회원가입</a></li>
+    </ul>
+  </header>
+  <br>
+
+  <section>
+    <div class="pink">
+      <div class="gray">
+        <div class="login-wrapper">
+          <h1>로그인/회원가입</h1>
+          <form method="post" action="서버의url" id="login-form" >
+            <input type="text" name="userName" placeholder="ID" class="id" >
+            <input type="password" name="userPassword" placeholder="Password" class="pw"><br>
+          <button class="login-button">Login</button><br>
+          <hr class="sns-login">
+          </form>
+        </div>
+
       </div>
-    </header>
-  </div>
+    </div>
+  </section>
 </body>
 
 </html>
