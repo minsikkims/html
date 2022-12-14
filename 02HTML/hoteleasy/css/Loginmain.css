@@ -1,3 +1,11 @@
+section{
+  border: 0;
+  /* margin-left: 30px; */
+  /* margin-bottom: 70px; */
+  height: 850px;
+  width: 1850px;
+  margin: 0px;
+}
 section>.pink {
   /* border: 1px solid gray; */
   background-color: lavenderblush;
@@ -5,11 +13,11 @@ section>.pink {
   border-radius: 10px;
   position: relative;
   top: -10px;
-  height: 850px;
+  height: 860px;
   width: 1850px;
   /* align-items: center; */
   /* text-align: center;  */
-  margin: 0 auto;
+  margin-left: 25px;
 }
 
 section>.pink>.gray {
@@ -18,11 +26,16 @@ section>.pink>.gray {
   border-radius: 10%;
   position: relative;
   top: 30px;
-  height: 800px;
+  height: 700px;
   width: 900px;
   margin-right: 100px;
   margin: 0 auto;
 
+}
+
+#login-form {
+  display: contents;
+  border: 1px solid red;
 }
 
 .login-wrapper {
@@ -46,9 +59,29 @@ section>.pink>.gray {
   /* margin: 0 auto; */
 }
 
+i.bi.bi-person::before {
+  /* height: 100px; */
+  /* display: none; */
+  /* position: relative; */
+  /* display: flex; */
+  /* color: rgb(255, 105, 130); */
+  /* height: 15px; */
+  /* border: none; */
+  /* margin-left: 200px;
+  margin-top: 100px; */
+  /* margin-top: 100px; */
+ /* margin-left: 220px; */
+ /* margin-top: 70px; */
+  /* font-size: 30px; */
+}
+
+/* section>.pink>.gray>.login-wrapper>#login-form> input{
+  height: 100px;
+} */
 section>.pink>.gray>.login-wrapper>#login-form>.id {
   /* border: 1px solid black; */
   /* text-align: center; */
+  display: inline;
   color: gray;
   width: 250px;
   height: 40px;
@@ -56,6 +89,8 @@ section>.pink>.gray>.login-wrapper>#login-form>.id {
   margin-top: 20px;
   border-radius: 8px;
   transition: 0.5s;
+  padding: none;
+  position: relative;
 }
 
 section>.pink>.gray>.login-wrapper>#login-form>.pw {
@@ -84,22 +119,77 @@ section>.pink>.gray>.login-wrapper>#login-form>.pw {
   text-align: center;
   border-radius: 8px;
 }
-section>.snsfont{
-  border: 1px solid red;
-  font-size: 50px;
-  margin-top: 10px;
-}
-.snslogin{
 
-  width: 600px;
-  /* height: 100px; */
-  margin-top: 20px;
-  margin-left: 100px;
-  border: 1px solid gray;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
+
+.sns-font {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: black;
+  font-size: 15px;
+  margin: 15px 0px 0px 140px;
+  width: 500px;
+
 }
+
+.sns-login {
+  width: 360px;
+  height: 150px;
+  margin-top: 100px;
+  margin-left: 190px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border-color: white;
+}
+
+.sns-login>li>button {
+  background-color: transparent;
+  border: none;
+}
+
+.login-menu {
+  width: 360px;
+  margin-top: 30px;
+  margin-left: 190px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+.facebook,
+.insta,
+.google,
+.e-mail {
+  height: 50px;
+  width: 50px;
+  border: none;
+  /* background-color: transparent;
+  border-color: white; */
+}
+
+.sns-font::before,
+.sns-font::after {
+  content: "";
+  flex-grow: 1;
+  /* background: rgba(0, 0, 0, 0.35); */
+  background: black;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
+
+
+
+
+
+
 .login-btn:hover {
   box-shadow: inset 0 0 0 3px #fff,
     0 0 0 4px #fff,

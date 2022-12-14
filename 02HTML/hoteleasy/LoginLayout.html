@@ -10,10 +10,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <!-- 헤더.css -->
   <link rel="stylesheet" href="../hoteleasy/css/header.css">
+  <!-- login.css -->
   <link rel="stylesheet" href="./css/Loginmain.css">
+  <!-- footer.css -->
+  <link rel="stylesheet" href="./css/footer.css">
   <!-- BootStrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
 
 </head>
 
@@ -35,18 +38,45 @@
         <div class="login-wrapper">
           <h1>로그인/회원가입</h1>
           <form method="post" action="서버의url" id="login-form">
+            <!-- <i class="bi bi-person"></i> -->
             <input type="text" name="userName" placeholder="UserID" class="id">
-
             <input type="password" name="userPassword" placeholder="Password" class="pw"><br>
-            <button class="login-btn"><span class="lgoin-effect">Login</span></button><br>
-            <br>
-            <div class="snslogin"><span class="sns-font">sns 로그인</span></div>
-          </form>
-        </div>
 
+            <button class="login-btn"><span class="lgoin-effect">Login</span></button><br>
+            <ul class="login-menu">
+              <li>아이디 찾기</li>
+              <li>비밀번호 찾기</li>
+              <li>회원가입</li>
+            </ul>
+            <br>
+            <div class="sns-font">sns계정으로 로그인</div>
+            <div>
+              <ul class="sns-login">
+                <li><button><img src="./image/facebookicon.png" class="facebook"></button></li>
+                <li><button><img src="./image/instagramicon.png" class="insta"></button></li>
+                <li><button><img src="./image/googleicon.png" class="google"></button></li>
+                <li><button><img src="./image/E-mail-icon.png" class="e-mail"></button></li>
+              </ul>
+            </div>
+        </div>
+        </form>
       </div>
     </div>
+    </div>
   </section>
+  <footer>
+    <div class="foot1">
+      <h1>HOTEL EASY 지원 </h1><br>
+      <div class="footchi"><a href="">ⓞ이용약관</a><a href="">ⓞ환불정책</a><a href="">ⓞ도움말 & FAQ</a></div><br>
+      <!-- <div class="footchi"></div> 
+      <div class="footchi"></div> -->
+    </div>
+    <div class="foot2"><br>
+      <a href="">로그인/회원가입</a><br>
+      <h1>ⓞ2022 HOTELEASY</h1>
+    </div>
+  </footer>
+
 </body>
 
 </html>
