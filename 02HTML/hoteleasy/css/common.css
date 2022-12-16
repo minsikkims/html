@@ -7,7 +7,6 @@ html{
 
 body{
   box-sizing: border-box;
-  line-height: 20px;
 }
 header,nav,footer{
   padding: 0px 150px;
