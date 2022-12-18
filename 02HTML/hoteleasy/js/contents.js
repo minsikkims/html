@@ -15,3 +15,5 @@ new Swiper('.second-banner .swiper',{
       prevEl:'.second-banner .swiper-button-prev',
       nextEl:'.second-banner .swiper-button-next'}
     });
+
+    
