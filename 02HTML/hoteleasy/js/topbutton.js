@@ -1,30 +1,10 @@
-const toTopBtnEl = document.querySelector('.btn-up');
-
-toTopBtnEl.addEventListener('click', function () {
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-
-})
-let toTopflag = false;
-window.addEventListener('scroll', _.throttle(function () {
-  if (window.scrollY > 700) {
-    if (toTopflag == false) {
-      toTopBtnEl.style.display = 'flex';
-      toTopflag = true;
-    }
-    //버튼 표시
-    toTopBtnEl.classList.remove('btn--ToRight');
-    toTopBtnEl.classList.add('btn--Toleft');
-
-  } else {
-
-    //버튼 숨기기
-    toTopBtnEl.classList.add('btn--ToRight');
-    toTopBtnEl.classList.remove('btn--Toleft');
-
-
+document.addEventListener('scroll', function() {
+  var currentScrollValue = document.documentElement.scrollTop;
+  //console.log('currentScrollValue is ' + currentScrollValue);
+  if(currentScrollValue>=100){
+    document.getElementById("btn_scroll_top").style.display = "flex";
+    //console.log('currentScrollValue is는 ' + currentScrollValue);
+  }else{
+    document.getElementById("btn_scroll_top").style.display = "none";
   }
-}, 300));
+});

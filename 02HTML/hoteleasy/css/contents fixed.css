@@ -27,8 +27,10 @@ background-color: lavenderblush;
   height: 100px;
   /* display: flex; */
   position: fixed;
-  display: flex;
-   
+  /*display: none;  */
+}
+#btn_scroll_top {
+  display: none;
 }
 /* 최상단 버튼 애니메이션 */
 html {
