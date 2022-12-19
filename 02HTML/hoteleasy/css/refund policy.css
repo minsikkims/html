@@ -1,0 +1,35 @@
+.use-refund {
+  height: 1000px;
+  width: 1460px;
+  background-color: lightgray;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  left: 50px;
+  bottom: 25px;
+}
+
+.use-refund>.refund-title {
+  width: 150px;
+  height: 40px;
+  /* border: 1px solid red; */
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  left: 600px;
+  top: 10px;
+}
+
+.use-refund>.refund-policy {
+  width: 1400px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  left: 30px;
+  top: 70px;
+  border-radius: 8px;
+  text-align: left;
+}
+

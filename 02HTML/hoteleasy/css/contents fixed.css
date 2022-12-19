@@ -10,8 +10,11 @@ background-color: lavenderblush;
 .contents>.btn-up{
   width: 25px;
   height: 30px;
-  margin-left: 1630px;
-  margin-top: 800px;
+  /* position:absolute; */
+  display: flex;
+  position: relative;
+  left: 1450px;
+  top: 610px;
 }
 .contents>.btn-up>.btn-up-position{
   width: 20px;
@@ -31,6 +34,10 @@ background-color: lavenderblush;
 }
 #btn_scroll_top {
   display: none;
+  position: relative;
+  top: 200px;
+  left: 170px;
+  /* transition: 0.5s; */
 }
 /* 최상단 버튼 애니메이션 */
 html {

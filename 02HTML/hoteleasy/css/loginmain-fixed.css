@@ -7,7 +7,7 @@
   position: relative;
   margin: 0px auto;
   display: flex;
-  bottom: 650px;
+  top: 40px;
 }
 
 .contents>.login-wrapper>h1 {
